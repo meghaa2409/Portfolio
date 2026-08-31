@@ -2,6 +2,7 @@
   margin-top: 44px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: start;
   gap: 28px;
 }
 
@@ -27,6 +28,17 @@
 }
 .project__mock { width: 100%; max-width: 300px; height: auto; }
 .project__visual--phone .project__mock { max-width: 176px; }
+
+.project__visual--image {
+  padding: 12px;
+  height: 240px;
+  overflow: hidden;
+}
+.project__visual--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .project__body { padding: 28px 26px 30px; }
 .project__body h3 {

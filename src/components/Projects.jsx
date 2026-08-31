@@ -24,6 +24,8 @@ const PROJECTS = [
       'Refined the interface for accessibility and clarity',
     ],
     frame: 'phone',
+    image: '/projecthero/campus_explorer.png',
+    imageAlt: 'Campus Explorer app screens — sign-in, home, and turn-by-turn campus navigation',
   },
 ]
 
@@ -76,8 +78,8 @@ export default function Projects() {
         <div className="projects__grid">
           {PROJECTS.map((p) => (
             <article key={p.title} className="project">
-              <div className={`project__visual project__visual--${p.frame}`}>
-                <ProjectMock frame={p.frame} />
+              <div className={`project__visual project__visual--${p.frame} ${p.image ? 'project__visual--image' : ''}`}>
+                {p.image ? <img src={p.image} alt={p.imageAlt} /> : <ProjectMock frame={p.frame} />}
               </div>
               <div className="project__body">
                 <span className="tag">{p.tag}</span>
