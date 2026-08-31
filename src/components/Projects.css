@@ -1,8 +1,8 @@
 .projects__grid {
   margin-top: 44px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: stretch;
   gap: 28px;
 }
 
@@ -41,7 +41,12 @@
   object-fit: cover;
 }
 
-.project__body { padding: 28px 26px 30px; }
+.project__body {
+  padding: 28px 26px 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 .project__body h3 {
   margin-top: 12px;
   font-weight: 500;
@@ -55,7 +60,7 @@
   color: var(--ink-soft);
 }
 .project__body ul {
-  margin-top: 18px;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   gap: 8px;

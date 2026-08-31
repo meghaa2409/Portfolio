@@ -27,6 +27,20 @@ const PROJECTS = [
     image: '/projecthero/campus_explorer.png',
     imageAlt: 'Campus Explorer app screens — sign-in, home, and turn-by-turn campus navigation',
   },
+  {
+    title: 'SignLang AI — Sign Language Translator',
+    tag: 'UI/UX Design · Web App',
+    description:
+      'Designed the interface for a real-time AI sign language translator, built to make ASL and ISL communication more accessible over webcam.',
+    points: [
+      'Designed a simple 3-step onboarding flow: enable webcam, sign, see the translation',
+      'Built a language-selection interface supporting ASL, ISL, and more',
+      'Highlighted trust and accessibility through clear, reassuring feature messaging',
+    ],
+    frame: 'browser',
+    image: '/projecthero/sign_language.png',
+    imageAlt: 'SignLang AI landing page — hero, step-by-step onboarding, and language selector',
+  },
 ]
 
 function ProjectMock({ frame }) {
@@ -72,7 +86,7 @@ export default function Projects() {
       <div className="shell">
         <div className="section__head">
           <span className="eyebrow">Projects</span>
-          <h2>Selected case studies.</h2>
+          <h2>A few things I've built.</h2>
         </div>
 
         <div className="projects__grid">
