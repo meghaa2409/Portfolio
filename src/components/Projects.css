@@ -32,7 +32,7 @@
 .project__visual--image {
   padding: 0;
   height: auto;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
 }
 .project__visual--image img {
